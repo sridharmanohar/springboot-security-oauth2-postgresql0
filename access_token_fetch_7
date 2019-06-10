@@ -1,0 +1,193 @@
+2019-06-05 12:00:12.562 DEBUG 14427 --- [io-8080-exec-10] o.s.b.w.f.OrderedRequestContextFilter    : Bound request context to thread: org.apache.catalina.connector.RequestFacade@32d68bb1
+2019-06-05 12:00:12.563 DEBUG 14427 --- [io-8080-exec-10] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/token']
+2019-06-05 12:00:12.563 DEBUG 14427 --- [io-8080-exec-10] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/oauth/token'; against '/oauth/token'
+2019-06-05 12:00:12.563 DEBUG 14427 --- [io-8080-exec-10] o.s.s.web.util.matcher.OrRequestMatcher  : matched
+2019-06-05 12:00:12.563 DEBUG 14427 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : /oauth/token at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-06-05 12:00:12.563 DEBUG 14427 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : /oauth/token at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-06-05 12:00:12.563 DEBUG 14427 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : /oauth/token at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-06-05 12:00:12.563 DEBUG 14427 --- [io-8080-exec-10] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@3152b56
+2019-06-05 12:00:12.563 DEBUG 14427 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : /oauth/token at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-06-05 12:00:12.564 DEBUG 14427 --- [io-8080-exec-10] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-06-05 12:00:12.564 DEBUG 14427 --- [io-8080-exec-10] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /oauth/token' doesn't match 'GET /logout
+2019-06-05 12:00:12.567 DEBUG 14427 --- [io-8080-exec-10] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-06-05 12:00:12.567 DEBUG 14427 --- [io-8080-exec-10] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/oauth/token'; against '/logout'
+2019-06-05 12:00:12.567 DEBUG 14427 --- [io-8080-exec-10] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-06-05 12:00:12.567 DEBUG 14427 --- [io-8080-exec-10] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /oauth/token' doesn't match 'PUT /logout
+2019-06-05 12:00:12.567 DEBUG 14427 --- [io-8080-exec-10] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-06-05 12:00:12.567 DEBUG 14427 --- [io-8080-exec-10] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /oauth/token' doesn't match 'DELETE /logout
+2019-06-05 12:00:12.567 DEBUG 14427 --- [io-8080-exec-10] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-06-05 12:00:12.567 DEBUG 14427 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : /oauth/token at position 5 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+2019-06-05 12:00:12.568 DEBUG 14427 --- [io-8080-exec-10] o.s.s.w.a.www.BasicAuthenticationFilter  : Basic Authentication Authorization header found for user 'spring-security-oauth2-read-client'
+2019-06-05 12:00:12.568 DEBUG 14427 --- [io-8080-exec-10] o.s.s.authentication.ProviderManager     : Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+2019-06-05 12:00:12.568 DEBUG 14427 --- [io-8080-exec-10] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'scopedTarget.clientDetailsService'
+2019-06-05 12:00:12.569 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2019-06-05 12:00:12.569 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+2019-06-05 12:00:12.569 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 12:00:12.572 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 12:00:12.580 DEBUG 14427 --- [io-8080-exec-10] o.s.s.w.a.www.BasicAuthenticationFilter  : Authentication success: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@f8175216: Principal: org.springframework.security.core.userdetails.User@7cffd7d: Username: spring-security-oauth2-read-client; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: USER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: USER
+2019-06-05 12:00:12.580 DEBUG 14427 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : /oauth/token at position 6 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-06-05 12:00:12.580 DEBUG 14427 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : /oauth/token at position 7 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-06-05 12:00:12.580 DEBUG 14427 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : /oauth/token at position 8 of 11 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-06-05 12:00:12.597 DEBUG 14427 --- [io-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : SecurityContextHolder not populated with anonymous token, as it already contained: 'org.springframework.security.authentication.UsernamePasswordAuthenticationToken@f8175216: Principal: org.springframework.security.core.userdetails.User@7cffd7d: Username: spring-security-oauth2-read-client; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: USER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: USER'
+2019-06-05 12:00:12.597 DEBUG 14427 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : /oauth/token at position 9 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-06-05 12:00:12.598 DEBUG 14427 --- [io-8080-exec-10] s.CompositeSessionAuthenticationStrategy : Delegating to org.springframework.security.web.authentication.session.ChangeSessionIdAuthenticationStrategy@3d36edd9
+2019-06-05 12:00:12.598 DEBUG 14427 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : /oauth/token at position 10 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-06-05 12:00:12.598 DEBUG 14427 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : /oauth/token at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2019-06-05 12:00:12.598 DEBUG 14427 --- [io-8080-exec-10] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/oauth/token'; against '/oauth/token'
+2019-06-05 12:00:12.598 DEBUG 14427 --- [io-8080-exec-10] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /oauth/token; Attributes: [fullyAuthenticated]
+2019-06-05 12:00:12.598 DEBUG 14427 --- [io-8080-exec-10] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@f8175216: Principal: org.springframework.security.core.userdetails.User@7cffd7d: Username: spring-security-oauth2-read-client; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: USER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: USER
+2019-06-05 12:00:12.598 DEBUG 14427 --- [io-8080-exec-10] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@48697f40, returned: 1
+2019-06-05 12:00:12.598 DEBUG 14427 --- [io-8080-exec-10] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2019-06-05 12:00:12.598 DEBUG 14427 --- [io-8080-exec-10] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2019-06-05 12:00:12.598 DEBUG 14427 --- [io-8080-exec-10] o.s.security.web.FilterChainProxy        : /oauth/token reached end of additional filter chain; proceeding with original chain
+2019-06-05 12:00:12.599 DEBUG 14427 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing POST request for [/oauth/token]
+2019-06-05 12:00:12.599 DEBUG 14427 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /oauth/token
+2019-06-05 12:00:12.608 DEBUG 14427 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Did not find handler method for [/oauth/token]
+2019-06-05 12:00:12.608 DEBUG 14427 --- [io-8080-exec-10] .s.o.p.e.FrameworkEndpointHandlerMapping : Looking up handler method for path /oauth/token
+2019-06-05 12:00:12.608 DEBUG 14427 --- [io-8080-exec-10] .s.o.p.e.FrameworkEndpointHandlerMapping : Returning handler method [public org.springframework.http.ResponseEntity<org.springframework.security.oauth2.common.OAuth2AccessToken> org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.postAccessToken(java.security.Principal,java.util.Map<java.lang.String, java.lang.String>) throws org.springframework.web.HttpRequestMethodNotSupportedException]
+2019-06-05 12:00:12.609 DEBUG 14427 --- [io-8080-exec-10] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'tokenEndpoint'
+2019-06-05 12:00:12.609 DEBUG 14427 --- [io-8080-exec-10] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'scopedTarget.clientDetailsService'
+2019-06-05 12:00:12.609 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2019-06-05 12:00:12.609 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+2019-06-05 12:00:12.609 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 12:00:12.610 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 12:00:12.610 DEBUG 14427 --- [io-8080-exec-10] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'scopedTarget.clientDetailsService'
+2019-06-05 12:00:12.610 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2019-06-05 12:00:12.611 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+2019-06-05 12:00:12.611 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 12:00:12.611 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 12:00:12.611 DEBUG 14427 --- [io-8080-exec-10] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'scopedTarget.clientDetailsService'
+2019-06-05 12:00:12.612 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2019-06-05 12:00:12.612 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+2019-06-05 12:00:12.612 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 12:00:12.619 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 12:00:12.619 DEBUG 14427 --- [io-8080-exec-10] o.s.s.o.p.refresh.RefreshTokenGranter    : Getting access token for: spring-security-oauth2-read-client
+2019-06-05 12:00:12.621 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2019-06-05 12:00:12.621 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select token_id, token from oauth_refresh_token where token_id = ?]
+2019-06-05 12:00:12.621 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 12:00:12.623 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 12:00:12.624 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2019-06-05 12:00:12.624 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select token_id, authentication from oauth_refresh_token where token_id = ?]
+2019-06-05 12:00:12.624 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 12:00:12.633 DEBUG 14427 --- [io-8080-exec-10] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 12:00:12.633 DEBUG 14427 --- [io-8080-exec-10] o.s.s.authentication.ProviderManager     : Authentication attempt using org.springframework.security.web.authentication.preauth.PreAuthenticatedAuthenticationProvider
+2019-06-05 12:00:12.633 DEBUG 14427 --- [io-8080-exec-10] p.PreAuthenticatedAuthenticationProvider : PreAuthenticated authentication request: org.springframework.security.web.authentication.preauth.PreAuthenticatedAuthenticationToken@a89519e8: Principal: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@7725eb9f: Principal: com.adamzareba.spring.security.oauth2.model.security.User@518a1019; Credentials: [PROTECTED]; Authenticated: true; Details: {grant_type=password, client_id=spring-security-oauth2-read-client, username=admin}; Granted Authorities: com.adamzareba.spring.security.oauth2.model.security.Authority@3a0fb6aa, com.adamzareba.spring.security.oauth2.model.security.Authority@1437c455, com.adamzareba.spring.security.oauth2.model.security.Authority@6be163af, com.adamzareba.spring.security.oauth2.model.security.Authority@62f1a73f, com.adamzareba.spring.security.oauth2.model.security.Authority@250ce72d, com.adamzareba.spring.security.oauth2.model.security.Authority@f338ab5, com.adamzareba.spring.security.oauth2.model.security.Authority@6faf7ce7, com.adamzareba.spring.security.oauth2.model.security.Authority@8f672, com.adamzareba.spring.security.oauth2.model.security.Authority@42ff5cd1; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: com.adamzareba.spring.security.oauth2.model.security.Authority@3a0fb6aa, com.adamzareba.spring.security.oauth2.model.security.Authority@1437c455, com.adamzareba.spring.security.oauth2.model.security.Authority@6be163af, com.adamzareba.spring.security.oauth2.model.security.Authority@62f1a73f, com.adamzareba.spring.security.oauth2.model.security.Authority@250ce72d, com.adamzareba.spring.security.oauth2.model.security.Authority@f338ab5, com.adamzareba.spring.security.oauth2.model.security.Authority@6faf7ce7, com.adamzareba.spring.security.oauth2.model.security.Authority@8f672, com.adamzareba.spring.security.oauth2.model.security.Authority@42ff5cd1
+2019-06-05 12:00:12.635 DEBUG 14427 --- [io-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolving exception from handler [public org.springframework.http.ResponseEntity<org.springframework.security.oauth2.common.OAuth2AccessToken> org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.postAccessToken(java.security.Principal,java.util.Map<java.lang.String, java.lang.String>) throws org.springframework.web.HttpRequestMethodNotSupportedException]: java.lang.IllegalStateException: UserDetailsService is required.
+2019-06-05 12:00:12.653 DEBUG 14427 --- [io-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Invoking @ExceptionHandler method: public org.springframework.http.ResponseEntity<org.springframework.security.oauth2.common.exceptions.OAuth2Exception> org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.handleException(java.lang.Exception) throws java.lang.Exception
+2019-06-05 12:00:12.668 ERROR 14427 --- [io-8080-exec-10] o.s.s.o.provider.endpoint.TokenEndpoint  : Handling error: IllegalStateException, UserDetailsService is required.
+
+java.lang.IllegalStateException: UserDetailsService is required.
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$UserDetailsServiceDelegator.loadUserByUsername(WebSecurityConfigurerAdapter.java:455) ~[spring-security-config-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.core.userdetails.UserDetailsByNameServiceWrapper.loadUserDetails(UserDetailsByNameServiceWrapper.java:68) ~[spring-security-core-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.authentication.preauth.PreAuthenticatedAuthenticationProvider.authenticate(PreAuthenticatedAuthenticationProvider.java:103) ~[spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174) ~[spring-security-core-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.oauth2.provider.token.DefaultTokenServices.refreshAccessToken(DefaultTokenServices.java:150) ~[spring-security-oauth2-2.2.1.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.refresh.RefreshTokenGranter.getAccessToken(RefreshTokenGranter.java:47) ~[spring-security-oauth2-2.2.1.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.token.AbstractTokenGranter.grant(AbstractTokenGranter.java:65) ~[spring-security-oauth2-2.2.1.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.CompositeTokenGranter.grant(CompositeTokenGranter.java:38) ~[spring-security-oauth2-2.2.1.RELEASE.jar:na]
+	at org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer$4.grant(AuthorizationServerEndpointsConfigurer.java:561) ~[spring-security-oauth2-2.2.1.RELEASE.jar:na]
+	at org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.postAccessToken(TokenEndpoint.java:132) ~[spring-security-oauth2-2.2.1.RELEASE.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:871) ~[spring-webmvc-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:777) ~[spring-webmvc-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) [spring-webmvc-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:881) [spring-webmvc-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) [spring-webmvc-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:215) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) [spring-web-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) [spring-web-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) [spring-web-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.2.RELEASE.jar:5.0.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2019-06-05 12:00:12.671 DEBUG 14427 --- [io-8080-exec-10] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.security.oauth2.common.exceptions.OAuth2ExceptionJackson2Serializer'
+2019-06-05 12:00:12.671 DEBUG 14427 --- [io-8080-exec-10] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 12:00:12.671 DEBUG 14427 --- [io-8080-exec-10] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 12:00:12.703 DEBUG 14427 --- [io-8080-exec-10] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 12:00:12.709 DEBUG 14427 --- [io-8080-exec-10] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 12:00:12.709 DEBUG 14427 --- [io-8080-exec-10] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 12:00:12.709 DEBUG 14427 --- [io-8080-exec-10] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 12:00:12.731 DEBUG 14427 --- [io-8080-exec-10] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.security.oauth2.common.exceptions.OAuth2ExceptionJackson2Serializer'
+2019-06-05 12:00:12.734 DEBUG 14427 --- [io-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Written [error="server_error", error_description="Internal Server Error"] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c1f8ad9]
+2019-06-05 12:00:12.735  WARN 14427 --- [io-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved exception caused by Handler execution: java.lang.IllegalStateException: UserDetailsService is required.
+2019-06-05 12:00:12.735 DEBUG 14427 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2019-06-05 12:00:12.735 DEBUG 14427 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2019-06-05 12:00:12.735 DEBUG 14427 --- [io-8080-exec-10] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-06-05 12:00:12.735 DEBUG 14427 --- [io-8080-exec-10] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-06-05 12:00:12.735 DEBUG 14427 --- [io-8080-exec-10] o.s.b.w.f.OrderedRequestContextFilter    : Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@32d68bb1
+

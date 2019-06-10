@@ -1,0 +1,42 @@
+2019-06-05 11:21:07.205 DEBUG 14427 --- [nio-8080-exec-7] o.s.b.w.f.OrderedRequestContextFilter    : Bound request context to thread: org.apache.catalina.connector.RequestFacade@32d68bb1
+2019-06-05 11:21:07.205 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/token']
+2019-06-05 11:21:07.205 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/secured/company'; against '/oauth/token'
+2019-06-05 11:21:07.205 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/token_key']
+2019-06-05 11:21:07.205 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/secured/company'; against '/oauth/token_key'
+2019-06-05 11:21:07.205 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/check_token']
+2019-06-05 11:21:07.205 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/secured/company'; against '/oauth/check_token'
+2019-06-05 11:21:07.205 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-06-05 11:21:07.205 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/secured/company'; against '/h2-console/**'
+2019-06-05 11:21:07.205 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/secured/**']
+2019-06-05 11:21:07.205 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/secured/company'; against '/secured/**'
+2019-06-05 11:21:07.205 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : matched
+2019-06-05 11:21:07.205 DEBUG 14427 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /secured/company at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-06-05 11:21:07.205 DEBUG 14427 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /secured/company at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-06-05 11:21:07.205 DEBUG 14427 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /secured/company at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-06-05 11:21:07.206 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@580be955
+2019-06-05 11:21:07.206 DEBUG 14427 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /secured/company at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-06-05 11:21:07.206 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-06-05 11:21:07.206 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/secured/company'; against '/logout'
+2019-06-05 11:21:07.206 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-06-05 11:21:07.206 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /secured/company' doesn't match 'POST /logout
+2019-06-05 11:21:07.206 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-06-05 11:21:07.206 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /secured/company' doesn't match 'PUT /logout
+2019-06-05 11:21:07.206 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-06-05 11:21:07.206 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /secured/company' doesn't match 'DELETE /logout
+2019-06-05 11:21:07.206 DEBUG 14427 --- [nio-8080-exec-7] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-06-05 11:21:07.206 DEBUG 14427 --- [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : /secured/company at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter'
+2019-06-05 11:21:07.207 DEBUG 14427 --- [nio-8080-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2019-06-05 11:21:07.207 DEBUG 14427 --- [nio-8080-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select token_id, token from oauth_access_token where token_id = ?]
+2019-06-05 11:21:07.207 DEBUG 14427 --- [nio-8080-exec-7] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 11:21:07.211 DEBUG 14427 --- [nio-8080-exec-7] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 11:21:07.212 DEBUG 14427 --- [nio-8080-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2019-06-05 11:21:07.212 DEBUG 14427 --- [nio-8080-exec-7] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [delete from oauth_access_token where token_id = ?]
+2019-06-05 11:21:07.212 DEBUG 14427 --- [nio-8080-exec-7] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 11:21:07.222 DEBUG 14427 --- [nio-8080-exec-7] o.s.jdbc.core.JdbcTemplate               : SQL update affected 1 rows
+2019-06-05 11:21:07.228 DEBUG 14427 --- [nio-8080-exec-7] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 11:21:07.231 DEBUG 14427 --- [nio-8080-exec-7] p.a.OAuth2AuthenticationProcessingFilter : Authentication request failed: error="invalid_token", error_description="Access token expired: 96a2288e-3edb-4ad4-a21a-bcab392c7ac0"
+2019-06-05 11:21:07.232 DEBUG 14427 --- [nio-8080-exec-7] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'delegatingApplicationListener'
+2019-06-05 11:21:07.261 DEBUG 14427 --- [nio-8080-exec-7] s.s.o.p.e.DefaultOAuth2ExceptionRenderer : Written [error="invalid_token", error_description="Access token expired: 96a2288e-3edb-4ad4-a21a-bcab392c7ac0"] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@3e83d808]
+2019-06-05 11:21:07.266 DEBUG 14427 --- [nio-8080-exec-7] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-06-05 11:21:07.266 DEBUG 14427 --- [nio-8080-exec-7] o.s.b.w.f.OrderedRequestContextFilter    : Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@32d68bb1
+

@@ -1,0 +1,61 @@
+2019-06-03 22:49:38.069 DEBUG 30520 --- [nio-8080-exec-5] o.s.b.w.f.OrderedRequestContextFilter    : Bound request context to thread: org.apache.catalina.connector.RequestFacade@2dc9c36a
+2019-06-03 22:49:38.069 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/token']
+2019-06-03 22:49:38.069 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/secured/company'; against '/oauth/token'
+2019-06-03 22:49:38.069 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/token_key']
+2019-06-03 22:49:38.069 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/secured/company'; against '/oauth/token_key'
+2019-06-03 22:49:38.069 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/check_token']
+2019-06-03 22:49:38.069 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/secured/company'; against '/oauth/check_token'
+2019-06-03 22:49:38.069 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-06-03 22:49:38.069 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/secured/**']
+2019-06-03 22:49:38.069 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/secured/company'; against '/secured/**'
+2019-06-03 22:49:38.069 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.web.util.matcher.OrRequestMatcher  : matched
+2019-06-03 22:49:38.069 DEBUG 30520 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : /secured/company at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+
+2019-06-03 22:49:38.070 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-06-03 22:49:38.070 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/secured/company'; against '/logout'
+2019-06-03 22:49:38.070 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-06-03 22:49:38.070 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /secured/company' doesn't match 'POST /logout
+2019-06-03 22:49:38.070 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-06-03 22:49:38.070 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /secured/company' doesn't match 'PUT /logout
+2019-06-03 22:49:38.070 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-06-03 22:49:38.070 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /secured/company' doesn't match 'DELETE /logout
+2019-06-03 22:49:38.070 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-06-03 22:49:38.070 DEBUG 30520 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : /secured/company at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter'
+
+2019-06-03 22:49:38.073 DEBUG 30520 --- [nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2019-06-03 22:49:38.073 DEBUG 30520 --- [nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select token_id, token from oauth_access_token where token_id = ?]
+
+2019-06-03 22:49:38.073 DEBUG 30520 --- [nio-8080-exec-5] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-03 22:49:38.078 DEBUG 30520 --- [nio-8080-exec-5] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-03 22:49:38.079 DEBUG 30520 --- [nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2019-06-03 22:49:38.079 DEBUG 30520 --- [nio-8080-exec-5] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select token_id, authentication from oauth_access_token where token_id = ?]
+
+2019-06-03 22:49:38.079 DEBUG 30520 --- [nio-8080-exec-5] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-03 22:49:38.089 DEBUG 30520 --- [nio-8080-exec-5] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-03 22:49:38.089 DEBUG 30520 --- [nio-8080-exec-5] p.a.OAuth2AuthenticationProcessingFilter : Authentication success: org.springframework.security.oauth2.provider.OAuth2Authentication@c3654767: Principal: com.adamzareba.spring.security.oauth2.model.security.User@586c2c16; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: com.adamzareba.spring.security.oauth2.model.security.Authority@2983ed18, com.adamzareba.spring.security.oauth2.model.security.Authority@6aa5fb88, com.adamzareba.spring.security.oauth2.model.security.Authority@787eac57, com.adamzareba.spring.security.oauth2.model.security.Authority@240b422, com.adamzareba.spring.security.oauth2.model.security.Authority@349d725f, com.adamzareba.spring.security.oauth2.model.security.Authority@71a1b6ff, com.adamzareba.spring.security.oauth2.model.security.Authority@7c30b088, com.adamzareba.spring.security.oauth2.model.security.Authority@7bd6ea88, com.adamzareba.spring.security.oauth2.model.security.Authority@24067027
+2019-06-03 22:49:38.090 DEBUG 30520 --- [nio-8080-exec-5] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'delegatingApplicationListener'
+
+2019-06-03 22:49:38.091 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : SecurityContextHolder not populated with anonymous token, as it already contained: 'org.springframework.security.oauth2.provider.OAuth2Authentication@c3654767: Principal: com.adamzareba.spring.security.oauth2.model.security.User@586c2c16; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: com.adamzareba.spring.security.oauth2.model.security.Authority@2983ed18, com.adamzareba.spring.security.oauth2.model.security.Authority@6aa5fb88, com.adamzareba.spring.security.oauth2.model.security.Authority@787eac57, com.adamzareba.spring.security.oauth2.model.security.Authority@240b422, com.adamzareba.spring.security.oauth2.model.security.Authority@349d725f, com.adamzareba.spring.security.oauth2.model.security.Authority@71a1b6ff, com.adamzareba.spring.security.oauth2.model.security.Authority@7c30b088, com.adamzareba.spring.security.oauth2.model.security.Authority@7bd6ea88, com.adamzareba.spring.security.oauth2.model.security.Authority@24067027'
+
+2019-06-03 22:49:38.092 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /secured/company' doesn't match 'POST /secured/**
+2019-06-03 22:49:38.092 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /secured/company; Attributes: [#oauth2.throwOnError(#oauth2.hasScope('read'))]
+2019-06-03 22:49:38.092 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.oauth2.provider.OAuth2Authentication@c3654767: Principal: com.adamzareba.spring.security.oauth2.model.security.User@586c2c16; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: com.adamzareba.spring.security.oauth2.model.security.Authority@2983ed18, com.adamzareba.spring.security.oauth2.model.security.Authority@6aa5fb88, com.adamzareba.spring.security.oauth2.model.security.Authority@787eac57, com.adamzareba.spring.security.oauth2.model.security.Authority@240b422, com.adamzareba.spring.security.oauth2.model.security.Authority@349d725f, com.adamzareba.spring.security.oauth2.model.security.Authority@71a1b6ff, com.adamzareba.spring.security.oauth2.model.security.Authority@7c30b088, com.adamzareba.spring.security.oauth2.model.security.Authority@7bd6ea88, com.adamzareba.spring.security.oauth2.model.security.Authority@24067027
+
+2019-06-03 22:49:38.095 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@6b07c99a, returned: 1
+2019-06-03 22:49:38.095 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2019-06-03 22:49:38.096 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2019-06-03 22:49:38.096 DEBUG 30520 --- [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : /secured/company reached end of additional filter chain; proceeding with original chain
+
+2019-06-03 22:49:38.120 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.access.prepost.PreInvocationAuthorizationAdviceVoter@29bef9ce, returned: 1
+2019-06-03 22:49:38.120 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.a.i.a.MethodSecurityInterceptor    : Authorization successful
+2019-06-03 22:49:38.120 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.a.i.a.MethodSecurityInterceptor    : RunAsManager did not change Authentication object
+2019-06-03 22:49:38.164 DEBUG 30520 --- [nio-8080-exec-5] o.h.q.c.internal.CriteriaQueryImpl       : Rendered criteria query -> select distinct generatedAlias0 from Company as generatedAlias0
+2019-06-03 22:49:38.166 DEBUG 30520 --- [nio-8080-exec-5] o.h.h.internal.ast.QueryTranslatorImpl   : parse() - HQL: select distinct generatedAlias0 from com.adamzareba.spring.security.oauth2.model.Company as generatedAlias0
+2019-06-03 22:49:38.667 DEBUG 30520 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2019-06-03 22:49:38.667 DEBUG 30520 --- [nio-8080-exec-5] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2019-06-03 22:49:38.667 DEBUG 30520 --- [nio-8080-exec-5] o.s.orm.jpa.EntityManagerFactoryUtils    : Closing JPA EntityManager
+2019-06-03 22:49:38.668 DEBUG 30520 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2019-06-03 22:49:38.668 DEBUG 30520 --- [nio-8080-exec-5] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-06-03 22:49:38.668 DEBUG 30520 --- [nio-8080-exec-5] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-06-03 22:49:38.668 DEBUG 30520 --- [nio-8080-exec-5] o.s.b.w.f.OrderedRequestContextFilter    : Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@2dc9c36a
+

@@ -1,0 +1,280 @@
+2019-06-05 11:13:42.656 DEBUG 14427 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing servlet 'dispatcherServlet'
+2019-06-05 11:13:42.659  INFO 14427 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-05 11:13:42.659  INFO 14427 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-06-05 11:13:42.660 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'multipartResolver'
+2019-06-05 11:13:42.660 DEBUG 14427 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Using MultipartResolver [org.springframework.web.multipart.support.StandardServletMultipartResolver@34102f99]
+2019-06-05 11:13:42.666 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+2019-06-05 11:13:42.667 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 11:13:42.667 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 11:13:42.676 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 11:13:42.676 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 11:13:42.676 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 11:13:42.676 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 11:13:42.677 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+2019-06-05 11:13:42.677 DEBUG 14427 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@19485c58]
+2019-06-05 11:13:42.679 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2019-06-05 11:13:42.679 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 11:13:42.679 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 11:13:42.687 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 11:13:42.687 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 11:13:42.687 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 11:13:42.687 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 11:13:42.689 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2019-06-05 11:13:42.689 DEBUG 14427 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@25b41a6a]
+2019-06-05 11:13:42.690 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'oauth2EndpointHandlerMapping'
+2019-06-05 11:13:42.691 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'requestMappingHandlerMapping'
+2019-06-05 11:13:42.691 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'viewControllerHandlerMapping'
+2019-06-05 11:13:42.691 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'beanNameHandlerMapping'
+2019-06-05 11:13:42.691 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'resourceHandlerMapping'
+2019-06-05 11:13:42.691 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'defaultServletHandlerMapping'
+2019-06-05 11:13:42.691 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'faviconHandlerMapping'
+2019-06-05 11:13:42.691 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'welcomePageHandlerMapping'
+2019-06-05 11:13:42.692 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'requestMappingHandlerAdapter'
+2019-06-05 11:13:42.692 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'httpRequestHandlerAdapter'
+2019-06-05 11:13:42.692 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'simpleControllerHandlerAdapter'
+2019-06-05 11:13:42.694 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'errorAttributes'
+2019-06-05 11:13:42.694 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'handlerExceptionResolver'
+2019-06-05 11:13:42.695 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2019-06-05 11:13:42.695 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 11:13:42.695 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 11:13:42.701 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 11:13:42.702 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 11:13:42.702 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 11:13:42.702 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 11:13:42.704 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2019-06-05 11:13:42.704 DEBUG 14427 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@bca700c]
+2019-06-05 11:13:42.705 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'beanNameViewResolver'
+2019-06-05 11:13:42.705 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'mvcViewResolver'
+2019-06-05 11:13:42.705 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'defaultViewResolver'
+2019-06-05 11:13:42.705 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'viewResolver'
+2019-06-05 11:13:42.711 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+2019-06-05 11:13:42.712 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 11:13:42.712 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 11:13:42.726 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 11:13:42.726 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 11:13:42.726 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 11:13:42.726 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 11:13:42.735 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+2019-06-05 11:13:42.735 DEBUG 14427 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@4a2e356b]
+2019-06-05 11:13:42.735 DEBUG 14427 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Published WebApplicationContext of servlet 'dispatcherServlet' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcherServlet]
+2019-06-05 11:13:42.735  INFO 14427 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 75 ms
+2019-06-05 11:13:42.735 DEBUG 14427 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Servlet 'dispatcherServlet' configured successfully
+2019-06-05 11:13:42.762 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.w.f.OrderedRequestContextFilter    : Bound request context to thread: org.apache.catalina.connector.RequestFacade@32d68bb1
+2019-06-05 11:13:42.762 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'springSecurityFilterChain'
+2019-06-05 11:13:42.767 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/token']
+2019-06-05 11:13:42.768 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/oauth/token'; against '/oauth/token'
+2019-06-05 11:13:42.768 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : matched
+2019-06-05 11:13:42.770 DEBUG 14427 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /oauth/token at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-06-05 11:13:42.772 DEBUG 14427 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /oauth/token at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-06-05 11:13:42.773 DEBUG 14427 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /oauth/token at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-06-05 11:13:42.773 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@3152b56
+2019-06-05 11:13:42.774 DEBUG 14427 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /oauth/token at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-06-05 11:13:42.774 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-06-05 11:13:42.774 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /oauth/token' doesn't match 'GET /logout
+2019-06-05 11:13:42.774 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-06-05 11:13:42.774 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/oauth/token'; against '/logout'
+2019-06-05 11:13:42.774 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-06-05 11:13:42.774 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /oauth/token' doesn't match 'PUT /logout
+2019-06-05 11:13:42.774 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-06-05 11:13:42.774 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /oauth/token' doesn't match 'DELETE /logout
+2019-06-05 11:13:42.774 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-06-05 11:13:42.774 DEBUG 14427 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /oauth/token at position 5 of 11 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+2019-06-05 11:13:42.783 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.w.a.www.BasicAuthenticationFilter  : Basic Authentication Authorization header found for user 'spring-security-oauth2-read-client'
+2019-06-05 11:13:42.786 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.authentication.ProviderManager     : Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+2019-06-05 11:13:42.786 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'scopedTarget.clientDetailsService'
+2019-06-05 11:13:42.786 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'scopedTarget.clientDetailsService'
+2019-06-05 11:13:42.787 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 11:13:42.787 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 11:13:42.787 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.security.oauth2.config.annotation.configuration.ClientDetailsServiceConfiguration'
+2019-06-05 11:13:43.313 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'scopedTarget.clientDetailsService' to allow for resolving potential circular references
+2019-06-05 11:13:43.323 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 11:13:43.323 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 11:13:43.323 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 11:13:43.323 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 11:13:43.324 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'scopedTarget.clientDetailsService'
+2019-06-05 11:13:43.333 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2019-06-05 11:13:43.334 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+2019-06-05 11:13:43.334 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 11:13:43.359 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 11:13:43.373 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.w.a.www.BasicAuthenticationFilter  : Authentication success: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@f8175216: Principal: org.springframework.security.core.userdetails.User@7cffd7d: Username: spring-security-oauth2-read-client; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: USER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: USER
+2019-06-05 11:13:43.373 DEBUG 14427 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /oauth/token at position 6 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-06-05 11:13:43.373 DEBUG 14427 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /oauth/token at position 7 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-06-05 11:13:43.376 DEBUG 14427 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /oauth/token at position 8 of 11 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-06-05 11:13:43.376 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : SecurityContextHolder not populated with anonymous token, as it already contained: 'org.springframework.security.authentication.UsernamePasswordAuthenticationToken@f8175216: Principal: org.springframework.security.core.userdetails.User@7cffd7d: Username: spring-security-oauth2-read-client; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: USER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: USER'
+2019-06-05 11:13:43.376 DEBUG 14427 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /oauth/token at position 9 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-06-05 11:13:43.376 DEBUG 14427 --- [nio-8080-exec-1] s.CompositeSessionAuthenticationStrategy : Delegating to org.springframework.security.web.authentication.session.ChangeSessionIdAuthenticationStrategy@3d36edd9
+2019-06-05 11:13:43.377 DEBUG 14427 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /oauth/token at position 10 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-06-05 11:13:43.377 DEBUG 14427 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /oauth/token at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2019-06-05 11:13:43.379 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/oauth/token'; against '/oauth/token'
+2019-06-05 11:13:43.380 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /oauth/token; Attributes: [fullyAuthenticated]
+2019-06-05 11:13:43.380 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@f8175216: Principal: org.springframework.security.core.userdetails.User@7cffd7d: Username: spring-security-oauth2-read-client; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: USER; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: USER
+2019-06-05 11:13:43.395 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@48697f40, returned: 1
+2019-06-05 11:13:43.395 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2019-06-05 11:13:43.395 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2019-06-05 11:13:43.395 DEBUG 14427 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /oauth/token reached end of additional filter chain; proceeding with original chain
+2019-06-05 11:13:43.403 DEBUG 14427 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing POST request for [/oauth/token]
+2019-06-05 11:13:43.410 DEBUG 14427 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /oauth/token
+2019-06-05 11:13:43.422 DEBUG 14427 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Did not find handler method for [/oauth/token]
+2019-06-05 11:13:43.422 DEBUG 14427 --- [nio-8080-exec-1] .s.o.p.e.FrameworkEndpointHandlerMapping : Looking up handler method for path /oauth/token
+2019-06-05 11:13:43.425 DEBUG 14427 --- [nio-8080-exec-1] .s.o.p.e.FrameworkEndpointHandlerMapping : Returning handler method [public org.springframework.http.ResponseEntity<org.springframework.security.oauth2.common.OAuth2AccessToken> org.springframework.security.oauth2.provider.endpoint.TokenEndpoint.postAccessToken(java.security.Principal,java.util.Map<java.lang.String, java.lang.String>) throws org.springframework.web.HttpRequestMethodNotSupportedException]
+2019-06-05 11:13:43.425 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'tokenEndpoint'
+2019-06-05 11:13:43.470 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'scopedTarget.clientDetailsService'
+2019-06-05 11:13:43.471 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2019-06-05 11:13:43.471 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+2019-06-05 11:13:43.471 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 11:13:43.472 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 11:13:43.474 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'scopedTarget.clientDetailsService'
+2019-06-05 11:13:43.474 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2019-06-05 11:13:43.474 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+2019-06-05 11:13:43.474 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 11:13:43.475 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 11:13:43.513 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'scopedTarget.clientDetailsService'
+2019-06-05 11:13:43.514 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2019-06-05 11:13:43.514 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+2019-06-05 11:13:43.514 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 11:13:43.519 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 11:13:43.519 DEBUG 14427 --- [nio-8080-exec-1] .o.p.p.ResourceOwnerPasswordTokenGranter : Getting access token for: spring-security-oauth2-read-client
+2019-06-05 11:13:43.520 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.authentication.ProviderManager     : Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+2019-06-05 11:13:43.538 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'transactionManager'
+2019-06-05 11:13:43.546 DEBUG 14427 --- [nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [com.adamzareba.spring.security.oauth2.service.UserDetailsServiceImpl.loadUserByUsername]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly; ''
+2019-06-05 11:13:43.552 DEBUG 14427 --- [nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Opened new EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+2019-06-05 11:13:43.601 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Setting JDBC Connection [ProxyConnection[PooledConnection[org.postgresql.jdbc.PgConnection@abd9e8b]]] read-only
+2019-06-05 11:13:43.621 DEBUG 14427 --- [nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : begin
+2019-06-05 11:13:43.628 DEBUG 14427 --- [nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@6e3aa9a9]
+2019-06-05 11:13:43.768 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        distinct user0_.id as id1_7_0_,
+        authority2_.id as id1_1_1_,
+        user0_.account_expired as account_2_7_0_,
+        user0_.account_locked as account_3_7_0_,
+        user0_.credentials_expired as credenti4_7_0_,
+        user0_.enabled as enabled5_7_0_,
+        user0_.password as password6_7_0_,
+        user0_.user_name as user_nam7_7_0_,
+        authority2_.name as name2_1_1_,
+        authoritie1_.user_id as user_id1_8_0__,
+        authoritie1_.authority_id as authorit2_8_0__ 
+    from
+        user_ user0_ 
+    inner join
+        users_authorities authoritie1_ 
+            on user0_.id=authoritie1_.user_id 
+    inner join
+        authority authority2_ 
+            on authoritie1_.authority_id=authority2_.id 
+    where
+        user0_.user_name=? 
+    order by
+        authority2_.id asc
+2019-06-05 11:13:43.789 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result set row: 0
+2019-06-05 11:13:43.806 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result row: EntityKey[com.adamzareba.spring.security.oauth2.model.security.User#1], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#1]
+2019-06-05 11:13:43.824 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Found row of collection: [com.adamzareba.spring.security.oauth2.model.security.User.authorities#1]
+2019-06-05 11:13:43.860 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result set row: 1
+2019-06-05 11:13:43.861 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result row: EntityKey[com.adamzareba.spring.security.oauth2.model.security.User#1], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#2]
+2019-06-05 11:13:43.863 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Found row of collection: [com.adamzareba.spring.security.oauth2.model.security.User.authorities#1]
+2019-06-05 11:13:43.864 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result set row: 2
+2019-06-05 11:13:43.864 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result row: EntityKey[com.adamzareba.spring.security.oauth2.model.security.User#1], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#3]
+2019-06-05 11:13:43.865 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Found row of collection: [com.adamzareba.spring.security.oauth2.model.security.User.authorities#1]
+2019-06-05 11:13:43.866 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result set row: 3
+2019-06-05 11:13:43.866 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result row: EntityKey[com.adamzareba.spring.security.oauth2.model.security.User#1], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#4]
+2019-06-05 11:13:43.868 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Found row of collection: [com.adamzareba.spring.security.oauth2.model.security.User.authorities#1]
+2019-06-05 11:13:43.868 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result set row: 4
+2019-06-05 11:13:43.869 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result row: EntityKey[com.adamzareba.spring.security.oauth2.model.security.User#1], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#5]
+2019-06-05 11:13:43.869 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Found row of collection: [com.adamzareba.spring.security.oauth2.model.security.User.authorities#1]
+2019-06-05 11:13:43.869 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result set row: 5
+2019-06-05 11:13:43.869 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result row: EntityKey[com.adamzareba.spring.security.oauth2.model.security.User#1], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#6]
+2019-06-05 11:13:43.870 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Found row of collection: [com.adamzareba.spring.security.oauth2.model.security.User.authorities#1]
+2019-06-05 11:13:43.870 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result set row: 6
+2019-06-05 11:13:43.870 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result row: EntityKey[com.adamzareba.spring.security.oauth2.model.security.User#1], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#7]
+2019-06-05 11:13:43.870 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Found row of collection: [com.adamzareba.spring.security.oauth2.model.security.User.authorities#1]
+2019-06-05 11:13:43.871 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result set row: 7
+2019-06-05 11:13:43.871 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result row: EntityKey[com.adamzareba.spring.security.oauth2.model.security.User#1], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#8]
+2019-06-05 11:13:43.871 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Found row of collection: [com.adamzareba.spring.security.oauth2.model.security.User.authorities#1]
+2019-06-05 11:13:43.872 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result set row: 8
+2019-06-05 11:13:43.872 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result row: EntityKey[com.adamzareba.spring.security.oauth2.model.security.User#1], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#9]
+2019-06-05 11:13:43.873 DEBUG 14427 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Found row of collection: [com.adamzareba.spring.security.oauth2.model.security.User.authorities#1]
+2019-06-05 11:13:43.875 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.adamzareba.spring.security.oauth2.model.security.User#1]
+2019-06-05 11:13:44.576 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.adamzareba.spring.security.oauth2.model.security.User#1]
+2019-06-05 11:13:44.577 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.adamzareba.spring.security.oauth2.model.security.Authority#1]
+2019-06-05 11:13:44.577 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.adamzareba.spring.security.oauth2.model.security.Authority#1]
+2019-06-05 11:13:44.577 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.adamzareba.spring.security.oauth2.model.security.Authority#2]
+2019-06-05 11:13:44.578 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.adamzareba.spring.security.oauth2.model.security.Authority#2]
+2019-06-05 11:13:44.579 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.adamzareba.spring.security.oauth2.model.security.Authority#3]
+2019-06-05 11:13:44.579 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.adamzareba.spring.security.oauth2.model.security.Authority#3]
+2019-06-05 11:13:44.579 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.adamzareba.spring.security.oauth2.model.security.Authority#4]
+2019-06-05 11:13:44.580 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.adamzareba.spring.security.oauth2.model.security.Authority#4]
+2019-06-05 11:13:44.580 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.adamzareba.spring.security.oauth2.model.security.Authority#5]
+2019-06-05 11:13:44.581 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.adamzareba.spring.security.oauth2.model.security.Authority#5]
+2019-06-05 11:13:44.581 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.adamzareba.spring.security.oauth2.model.security.Authority#6]
+2019-06-05 11:13:44.581 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.adamzareba.spring.security.oauth2.model.security.Authority#6]
+2019-06-05 11:13:44.582 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.adamzareba.spring.security.oauth2.model.security.Authority#7]
+2019-06-05 11:13:44.582 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.adamzareba.spring.security.oauth2.model.security.Authority#7]
+2019-06-05 11:13:44.582 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.adamzareba.spring.security.oauth2.model.security.Authority#8]
+2019-06-05 11:13:44.582 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.adamzareba.spring.security.oauth2.model.security.Authority#8]
+2019-06-05 11:13:44.583 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.adamzareba.spring.security.oauth2.model.security.Authority#9]
+2019-06-05 11:13:44.583 DEBUG 14427 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.adamzareba.spring.security.oauth2.model.security.Authority#9]
+2019-06-05 11:13:44.584 DEBUG 14427 --- [nio-8080-exec-1] o.h.e.l.internal.CollectionLoadContext   : 1 collections were found in result set for role: com.adamzareba.spring.security.oauth2.model.security.User.authorities
+2019-06-05 11:13:44.594 DEBUG 14427 --- [nio-8080-exec-1] o.h.e.l.internal.CollectionLoadContext   : Collection fully initialized: [com.adamzareba.spring.security.oauth2.model.security.User.authorities#1]
+2019-06-05 11:13:44.594 DEBUG 14427 --- [nio-8080-exec-1] o.h.e.l.internal.CollectionLoadContext   : 1 collections initialized for role: com.adamzareba.spring.security.oauth2.model.security.User.authorities
+2019-06-05 11:13:44.606 DEBUG 14427 --- [nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2019-06-05 11:13:44.608 DEBUG 14427 --- [nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#7], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#6], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#5], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#4], EntityKey[com.adamzareba.spring.security.oauth2.model.security.User#1], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#9], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#8], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#3], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#2], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#1]],collectionKeys=[CollectionKey[com.adamzareba.spring.security.oauth2.model.security.User.authorities#1]]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])]
+2019-06-05 11:13:44.608 DEBUG 14427 --- [nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : committing
+2019-06-05 11:13:44.611 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Resetting read-only flag of JDBC Connection [ProxyConnection[PooledConnection[org.postgresql.jdbc.PgConnection@abd9e8b]]]
+2019-06-05 11:13:44.612 DEBUG 14427 --- [nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Closing JPA EntityManager [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#7], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#6], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#5], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#4], EntityKey[com.adamzareba.spring.security.oauth2.model.security.User#1], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#9], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#8], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#3], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#2], EntityKey[com.adamzareba.spring.security.oauth2.model.security.Authority#1]],collectionKeys=[CollectionKey[com.adamzareba.spring.security.oauth2.model.security.User.authorities#1]]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] after transaction
+2019-06-05 11:13:44.613 DEBUG 14427 --- [nio-8080-exec-1] o.s.orm.jpa.EntityManagerFactoryUtils    : Closing JPA EntityManager
+2019-06-05 11:13:44.679 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'delegatingApplicationListener'
+2019-06-05 11:13:44.683 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2019-06-05 11:13:44.683 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select token_id, token from oauth_access_token where authentication_id = ?]
+2019-06-05 11:13:44.683 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 11:13:44.690 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 11:13:44.691 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.o.p.token.store.JdbcTokenStore     : Failed to find access token for authentication org.springframework.security.oauth2.provider.OAuth2Authentication@5022c09c: Principal: com.adamzareba.spring.security.oauth2.model.security.User@62f71412; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: com.adamzareba.spring.security.oauth2.model.security.Authority@39298d3b, com.adamzareba.spring.security.oauth2.model.security.Authority@4a3bf829, com.adamzareba.spring.security.oauth2.model.security.Authority@770ffca, com.adamzareba.spring.security.oauth2.model.security.Authority@242328ea, com.adamzareba.spring.security.oauth2.model.security.Authority@bdecbf, com.adamzareba.spring.security.oauth2.model.security.Authority@1552b631, com.adamzareba.spring.security.oauth2.model.security.Authority@155c85fe, com.adamzareba.spring.security.oauth2.model.security.Authority@28859bc7, com.adamzareba.spring.security.oauth2.model.security.Authority@4732427c
+2019-06-05 11:13:44.694 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'scopedTarget.clientDetailsService'
+2019-06-05 11:13:44.694 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2019-06-05 11:13:44.694 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+2019-06-05 11:13:44.694 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 11:13:44.699 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 11:13:44.700 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'scopedTarget.clientDetailsService'
+2019-06-05 11:13:44.700 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2019-06-05 11:13:44.700 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+2019-06-05 11:13:44.700 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 11:13:44.701 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 11:13:44.707 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'scopedTarget.clientDetailsService'
+2019-06-05 11:13:44.707 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2019-06-05 11:13:44.707 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select client_id, client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri, authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove from oauth_client_details where client_id = ?]
+2019-06-05 11:13:44.707 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 11:13:44.716 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 11:13:44.719 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL query
+2019-06-05 11:13:44.719 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [select token_id, token from oauth_access_token where token_id = ?]
+2019-06-05 11:13:44.719 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 11:13:44.724 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 11:13:44.724  INFO 14427 --- [nio-8080-exec-1] o.s.s.o.p.token.store.JdbcTokenStore     : Failed to find access token for token 96a2288e-3edb-4ad4-a21a-bcab392c7ac0
+2019-06-05 11:13:44.923 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2019-06-05 11:13:44.925 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into oauth_access_token (token_id, token, authentication_id, user_name, client_id, authentication, refresh_token) values (?, ?, ?, ?, ?, ?, ?)]
+2019-06-05 11:13:44.925 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 11:13:44.928 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.support.lob.DefaultLobHandler   : Set bytes for BLOB with length 951
+2019-06-05 11:13:44.929 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.support.lob.DefaultLobHandler   : Set bytes for BLOB with length 3353
+2019-06-05 11:13:44.938 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : SQL update affected 1 rows
+2019-06-05 11:13:44.938 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 11:13:44.945 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL update
+2019-06-05 11:13:44.946 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : Executing prepared SQL statement [insert into oauth_refresh_token (token_id, token, authentication) values (?, ?, ?)]
+2019-06-05 11:13:44.946 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2019-06-05 11:13:44.947 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.support.lob.DefaultLobHandler   : Set bytes for BLOB with length 322
+2019-06-05 11:13:44.947 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.support.lob.DefaultLobHandler   : Set bytes for BLOB with length 3353
+2019-06-05 11:13:44.952 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.core.JdbcTemplate               : SQL update affected 1 rows
+2019-06-05 11:13:44.952 DEBUG 14427 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2019-06-05 11:13:45.037 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.security.oauth2.common.OAuth2AccessTokenJackson2Serializer'
+2019-06-05 11:13:45.037 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 11:13:45.037 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 11:13:45.067 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 11:13:45.067 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 11:13:45.067 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-06-05 11:13:45.067 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'metaDataSourceAdvisor'
+2019-06-05 11:13:45.077 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.security.oauth2.common.OAuth2AccessTokenJackson2Serializer'
+2019-06-05 11:13:45.154 DEBUG 14427 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Written [96a2288e-3edb-4ad4-a21a-bcab392c7ac0] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c1f8ad9]
+2019-06-05 11:13:45.155 DEBUG 14427 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2019-06-05 11:13:45.155 DEBUG 14427 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2019-06-05 11:13:45.157 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'delegatingApplicationListener'
+2019-06-05 11:13:45.157 DEBUG 14427 --- [nio-8080-exec-1] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-06-05 11:13:45.157 DEBUG 14427 --- [nio-8080-exec-1] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-06-05 11:13:45.157 DEBUG 14427 --- [nio-8080-exec-1] o.s.b.w.f.OrderedRequestContextFilter    : Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@32d68bb1
+

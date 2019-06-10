@@ -1,0 +1,138 @@
+2019-06-05 07:59:40.789 DEBUG 10877 --- [nio-8080-exec-1] o.s.b.w.f.OrderedRequestContextFilter    : Bound request context to thread: org.apache.catalina.connector.RequestFacade@6737602d
+2019-06-05 07:59:40.790 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/token']
+2019-06-05 07:59:40.790 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/secured/company'; against '/oauth/token'
+2019-06-05 07:59:40.790 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/token_key']
+2019-06-05 07:59:40.790 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/secured/company'; against '/oauth/token_key'
+2019-06-05 07:59:40.790 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/oauth/check_token']
+2019-06-05 07:59:40.790 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/secured/company'; against '/oauth/check_token'
+2019-06-05 07:59:40.790 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-06-05 07:59:40.790 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/secured/company'; against '/h2-console/**'
+2019-06-05 07:59:40.790 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/secured/**']
+2019-06-05 07:59:40.790 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/secured/company'; against '/secured/**'
+2019-06-05 07:59:40.790 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : matched
+2019-06-05 07:59:40.790 DEBUG 10877 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /secured/company at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2019-06-05 07:59:40.790 DEBUG 10877 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /secured/company at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2019-06-05 07:59:40.790 DEBUG 10877 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /secured/company at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2019-06-05 07:59:40.791 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2efc483d
+2019-06-05 07:59:40.791 DEBUG 10877 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /secured/company at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+2019-06-05 07:59:40.791 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
+2019-06-05 07:59:40.791 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/secured/company'; against '/logout'
+2019-06-05 07:59:40.791 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
+2019-06-05 07:59:40.792 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /secured/company' doesn't match 'POST /logout
+2019-06-05 07:59:40.792 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
+2019-06-05 07:59:40.792 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /secured/company' doesn't match 'PUT /logout
+2019-06-05 07:59:40.792 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
+2019-06-05 07:59:40.792 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /secured/company' doesn't match 'DELETE /logout
+2019-06-05 07:59:40.792 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
+2019-06-05 07:59:40.792 DEBUG 10877 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /secured/company at position 5 of 11 in additional filter chain; firing Filter: 'OAuth2AuthenticationProcessingFilter'
+2019-06-05 07:59:40.795 DEBUG 10877 --- [nio-8080-exec-1] p.a.OAuth2AuthenticationProcessingFilter : Authentication success: org.springframework.security.oauth2.provider.OAuth2Authentication@8cfce6c7: Principal: admin; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: DEPARTMENT_CREATE, COMPANY_READ, DEPARTMENT_DELETE, COMPANY_UPDATE, DEPARTMENT_READ, ROLE_COMPANY_READER, COMPANY_CREATE, DEPARTMENT_UPDATE, COMPANY_DELETE
+2019-06-05 07:59:40.796 DEBUG 10877 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'delegatingApplicationListener'
+2019-06-05 07:59:40.796 DEBUG 10877 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /secured/company at position 6 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2019-06-05 07:59:40.796 DEBUG 10877 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /secured/company at position 7 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2019-06-05 07:59:40.796 DEBUG 10877 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /secured/company at position 8 of 11 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2019-06-05 07:59:40.796 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : SecurityContextHolder not populated with anonymous token, as it already contained: 'org.springframework.security.oauth2.provider.OAuth2Authentication@8cfce6c7: Principal: admin; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: DEPARTMENT_CREATE, COMPANY_READ, DEPARTMENT_DELETE, COMPANY_UPDATE, DEPARTMENT_READ, ROLE_COMPANY_READER, COMPANY_CREATE, DEPARTMENT_UPDATE, COMPANY_DELETE'
+2019-06-05 07:59:40.796 DEBUG 10877 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /secured/company at position 9 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2019-06-05 07:59:40.796 DEBUG 10877 --- [nio-8080-exec-1] s.CompositeSessionAuthenticationStrategy : Delegating to org.springframework.security.web.authentication.session.ChangeSessionIdAuthenticationStrategy@61ef97a1
+2019-06-05 07:59:40.796 DEBUG 10877 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /secured/company at position 10 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2019-06-05 07:59:40.796 DEBUG 10877 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /secured/company at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2019-06-05 07:59:40.796 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /secured/company' doesn't match 'POST /secured/**
+2019-06-05 07:59:40.796 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /secured/company; Attributes: [#oauth2.throwOnError(#oauth2.hasScope('read'))]
+2019-06-05 07:59:40.796 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.oauth2.provider.OAuth2Authentication@8cfce6c7: Principal: admin; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: DEPARTMENT_CREATE, COMPANY_READ, DEPARTMENT_DELETE, COMPANY_UPDATE, DEPARTMENT_READ, ROLE_COMPANY_READER, COMPANY_CREATE, DEPARTMENT_UPDATE, COMPANY_DELETE
+2019-06-05 07:59:40.800 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@58b2b4d9, returned: 1
+2019-06-05 07:59:40.800 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2019-06-05 07:59:40.800 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2019-06-05 07:59:40.800 DEBUG 10877 --- [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /secured/company reached end of additional filter chain; proceeding with original chain
+2019-06-05 07:59:40.800 DEBUG 10877 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/secured/company]
+2019-06-05 07:59:40.800 DEBUG 10877 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /secured/company
+2019-06-05 07:59:40.801 DEBUG 10877 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public java.util.List<com.adamzareba.spring.security.oauth2.model.Company> com.adamzareba.spring.security.oauth2.controller.CompanyController.getAll()]
+2019-06-05 07:59:40.801 DEBUG 10877 --- [nio-8080-exec-1] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'companyController'
+2019-06-05 07:59:40.801 DEBUG 10877 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/secured/company] is: -1
+2019-06-05 07:59:40.802 DEBUG 10877 --- [nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2019-06-05 07:59:40.804 DEBUG 10877 --- [nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])] for JPA transaction
+2019-06-05 07:59:40.804 DEBUG 10877 --- [nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [com.adamzareba.spring.security.oauth2.service.CompanyServiceImpl.getAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly; ''
+2019-06-05 07:59:40.805 DEBUG 10877 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Setting JDBC Connection [ProxyConnection[PooledConnection[org.postgresql.jdbc.PgConnection@26fba855]]] read-only
+2019-06-05 07:59:40.806 DEBUG 10877 --- [nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : begin
+2019-06-05 07:59:40.806 DEBUG 10877 --- [nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7791da6]
+2019-06-05 07:59:40.806 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.a.i.a.MethodSecurityInterceptor    : Secure object: ReflectiveMethodInvocation: public abstract java.util.List com.adamzareba.spring.security.oauth2.service.CompanyService.getAll(); target is of class [com.adamzareba.spring.security.oauth2.service.CompanyServiceImpl]; Attributes: [[authorize: 'hasAuthority('COMPANY_READ')', filter: 'null', filterTarget: 'null']]
+2019-06-05 07:59:40.807 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.a.i.a.MethodSecurityInterceptor    : Previously Authenticated: org.springframework.security.oauth2.provider.OAuth2Authentication@8cfce6c7: Principal: admin; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: DEPARTMENT_CREATE, COMPANY_READ, DEPARTMENT_DELETE, COMPANY_UPDATE, DEPARTMENT_READ, ROLE_COMPANY_READER, COMPANY_CREATE, DEPARTMENT_UPDATE, COMPANY_DELETE
+2019-06-05 07:59:40.808 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.access.prepost.PreInvocationAuthorizationAdviceVoter@27633aae, returned: 1
+2019-06-05 07:59:40.808 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.a.i.a.MethodSecurityInterceptor    : Authorization successful
+2019-06-05 07:59:40.808 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.a.i.a.MethodSecurityInterceptor    : RunAsManager did not change Authentication object
+2019-06-05 07:59:40.849 DEBUG 10877 --- [nio-8080-exec-1] o.h.q.c.internal.CriteriaQueryImpl       : Rendered criteria query -> select distinct generatedAlias0 from Company as generatedAlias0
+2019-06-05 07:59:40.853 DEBUG 10877 --- [nio-8080-exec-1] o.h.h.internal.ast.QueryTranslatorImpl   : parse() - HQL: select distinct generatedAlias0 from com.adamzareba.spring.security.oauth2.model.Company as generatedAlias0
+2019-06-05 07:59:40.854 DEBUG 10877 --- [nio-8080-exec-1] o.h.hql.internal.ast.ErrorCounter        : throwQueryException() : no errors
+2019-06-05 07:59:40.854 DEBUG 10877 --- [nio-8080-exec-1] o.h.h.internal.ast.QueryTranslatorImpl   : --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  |  |  +-[IDENT] Node: 'com'
+       |     |  |  |  |  |  |  \-[IDENT] Node: 'adamzareba'
+       |     |  |  |  |  |  \-[IDENT] Node: 'spring'
+       |     |  |  |  |  \-[IDENT] Node: 'security'
+       |     |  |  |  \-[IDENT] Node: 'oauth2'
+       |     |  |  \-[IDENT] Node: 'model'
+       |     |  \-[IDENT] Node: 'Company'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          +-[DISTINCT] Node: 'distinct'
+          \-[IDENT] Node: 'generatedAlias0'
+
+2019-06-05 07:59:40.854 DEBUG 10877 --- [nio-8080-exec-1] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select << begin [level=1, statement=select]
+2019-06-05 07:59:40.855 DEBUG 10877 --- [nio-8080-exec-1] o.h.hql.internal.ast.tree.FromElement    : FromClause{level=1} : com.adamzareba.spring.security.oauth2.model.Company (generatedAlias0) -> company0_
+2019-06-05 07:59:40.855 DEBUG 10877 --- [nio-8080-exec-1] o.h.h.i.ast.tree.FromReferenceNode       : Resolved : generatedAlias0 -> company0_.id
+2019-06-05 07:59:40.855 DEBUG 10877 --- [nio-8080-exec-1] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select : finishing up [level=1, statement=select]
+2019-06-05 07:59:40.855 DEBUG 10877 --- [nio-8080-exec-1] o.h.hql.internal.ast.HqlSqlWalker        : processQuery() :  ( SELECT ( {select clause} distinct company0_.id ) ( FromClause{level=1} company company0_ ) )
+2019-06-05 07:59:40.856 DEBUG 10877 --- [nio-8080-exec-1] o.h.hql.internal.ast.util.JoinProcessor  : Using FROM fragment [company company0_]
+2019-06-05 07:59:40.856 DEBUG 10877 --- [nio-8080-exec-1] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select >> end [level=1, statement=select]
+2019-06-05 07:59:40.856 DEBUG 10877 --- [nio-8080-exec-1] o.h.h.internal.ast.QueryTranslatorImpl   : --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (company)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[DISTINCT] SqlNode: 'distinct'
+    |  +-[ALIAS_REF] IdentNode: 'company0_.id as id1_3_' {alias=generatedAlias0, className=com.adamzareba.spring.security.oauth2.model.Company, tableAlias=company0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'company0_.name as name2_3_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[company0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'company company0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=company,tableAlias=company0_,origin=null,columns={,className=com.adamzareba.spring.security.oauth2.model.Company}}
+
+2019-06-05 07:59:40.856 DEBUG 10877 --- [nio-8080-exec-1] o.h.hql.internal.ast.ErrorCounter        : throwQueryException() : no errors
+2019-06-05 07:59:40.856 DEBUG 10877 --- [nio-8080-exec-1] o.h.h.internal.ast.QueryTranslatorImpl   : HQL: select distinct generatedAlias0 from com.adamzareba.spring.security.oauth2.model.Company as generatedAlias0
+2019-06-05 07:59:40.856 DEBUG 10877 --- [nio-8080-exec-1] o.h.h.internal.ast.QueryTranslatorImpl   : SQL: select distinct company0_.id as id1_3_, company0_.name as name2_3_ from company company0_
+2019-06-05 07:59:40.856 DEBUG 10877 --- [nio-8080-exec-1] o.h.hql.internal.ast.ErrorCounter        : throwQueryException() : no errors
+2019-06-05 07:59:40.864 DEBUG 10877 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        distinct company0_.id as id1_3_,
+        company0_.name as name2_3_ 
+    from
+        company company0_
+2019-06-05 07:59:40.867 DEBUG 10877 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result set row: 0
+2019-06-05 07:59:40.867 DEBUG 10877 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result row: EntityKey[com.adamzareba.spring.security.oauth2.model.Company#2]
+2019-06-05 07:59:40.868 DEBUG 10877 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result set row: 1
+2019-06-05 07:59:40.868 DEBUG 10877 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result row: EntityKey[com.adamzareba.spring.security.oauth2.model.Company#1]
+2019-06-05 07:59:40.869 DEBUG 10877 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result set row: 2
+2019-06-05 07:59:40.869 DEBUG 10877 --- [nio-8080-exec-1] org.hibernate.loader.Loader              : Result row: EntityKey[com.adamzareba.spring.security.oauth2.model.Company#3]
+2019-06-05 07:59:40.870 DEBUG 10877 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.adamzareba.spring.security.oauth2.model.Company#2]
+2019-06-05 07:59:40.872 DEBUG 10877 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.adamzareba.spring.security.oauth2.model.Company#2]
+2019-06-05 07:59:40.872 DEBUG 10877 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.adamzareba.spring.security.oauth2.model.Company#1]
+2019-06-05 07:59:40.873 DEBUG 10877 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.adamzareba.spring.security.oauth2.model.Company#1]
+2019-06-05 07:59:40.873 DEBUG 10877 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [com.adamzareba.spring.security.oauth2.model.Company#3]
+2019-06-05 07:59:40.873 DEBUG 10877 --- [nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [com.adamzareba.spring.security.oauth2.model.Company#3]
+2019-06-05 07:59:40.873 DEBUG 10877 --- [nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2019-06-05 07:59:40.873 DEBUG 10877 --- [nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(PersistenceContext[entityKeys=[EntityKey[com.adamzareba.spring.security.oauth2.model.Company#3], EntityKey[com.adamzareba.spring.security.oauth2.model.Company#2], EntityKey[com.adamzareba.spring.security.oauth2.model.Company#1]],collectionKeys=[CollectionKey[com.adamzareba.spring.security.oauth2.model.Company.cars#1], CollectionKey[com.adamzareba.spring.security.oauth2.model.Company.cars#2], CollectionKey[com.adamzareba.spring.security.oauth2.model.Company.departments#3], CollectionKey[com.adamzareba.spring.security.oauth2.model.Company.departments#2], CollectionKey[com.adamzareba.spring.security.oauth2.model.Company.cars#3], CollectionKey[com.adamzareba.spring.security.oauth2.model.Company.departments#1]]];ActionQueue[insertions=ExecutableList{size=0} updates=ExecutableList{size=0} deletions=ExecutableList{size=0} orphanRemovals=ExecutableList{size=0} collectionCreations=ExecutableList{size=0} collectionRemovals=ExecutableList{size=0} collectionUpdates=ExecutableList{size=0} collectionQueuedOps=ExecutableList{size=0} unresolvedInsertDependencies=null])]
+2019-06-05 07:59:40.873 DEBUG 10877 --- [nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : committing
+2019-06-05 07:59:40.874 DEBUG 10877 --- [nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Resetting read-only flag of JDBC Connection [ProxyConnection[PooledConnection[org.postgresql.jdbc.PgConnection@26fba855]]]
+2019-06-05 07:59:40.874 DEBUG 10877 --- [nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2019-06-05 07:59:40.941 DEBUG 10877 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Written [[com.adamzareba.spring.security.oauth2.model.Company@650bf629, com.adamzareba.spring.security.oauth2.model.Company@5292aa7c, com.adamzareba.spring.security.oauth2.model.Company@1cac6f9]] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7638fa58]
+2019-06-05 07:59:40.941 DEBUG 10877 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2019-06-05 07:59:40.941 DEBUG 10877 --- [nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2019-06-05 07:59:40.941 DEBUG 10877 --- [nio-8080-exec-1] o.s.orm.jpa.EntityManagerFactoryUtils    : Closing JPA EntityManager
+2019-06-05 07:59:40.941 DEBUG 10877 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+2019-06-05 07:59:40.942 DEBUG 10877 --- [nio-8080-exec-1] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2019-06-05 07:59:40.942 DEBUG 10877 --- [nio-8080-exec-1] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2019-06-05 07:59:40.942 DEBUG 10877 --- [nio-8080-exec-1] o.s.b.w.f.OrderedRequestContextFilter    : Cleared thread-bound request context: org.apache.catalina.connector.RequestFacade@6737602d
+
